@@ -1,0 +1,31 @@
+<!--
+   3.- Escribir un documento XML con una DTD interna que represente la siguiente 
+   información ficticia: 
+    
+    Consideraciones respecto a la DTD:
+
+1) Hay que guardar el nombre del aeropuerto, los datos de cada vuelo agrupados y la fecha 
+del panel, en ese orden.
+2) En la DTD, sólo el código de un vuelo y su estado deben representarse mediante atributos.
+3) Se tiene que indicar que el código ha de ser único y obligatorio para cada vuelo.
+4) Los posibles estados de un vuelo son C (Cancelado), E (En hora), R (Retrasado). El valor
+por defecto debe ser E.
+5) En la DTD debe indicarse que al menos tiene que aparecer un vuelo y, para cada uno de ellos, 
+se tiene que guardar la información en el mismo orden en el que aparece en el panel.
+6) Para indicar si un vuelo es diario, se debe utilizar un elemento vacío que, respecto a 
+cada vuelo, podrá aparecer (en el caso de sí ser diario) o no aparecer (en el caso contrario).-->
+
+
+<panel>
+    <aeropuerto>Aeropuerto JFK</aeropuerto>
+    <vuelo codigo=""(ID) estado=""(cancelado|en)>
+        <origen></origen>
+        <destino></destino>
+        <horaSalida></horaSalida>
+        <horaLLegada></horaLLegada>
+    </vuelo>
+    <fecha></fecha>
+
+
+
+</panel>

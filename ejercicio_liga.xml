@@ -1,0 +1,92 @@
+<?xml version=" 1.0 " encoding=" UTF-8 " standalone= " yes "?>
+<!DOCTYPE liga SYSTEM "ejerciocion_liga.dtd">
+<liga>
+	<partido>
+	<!--equipo1 uno siempre es el local-->
+		<equipo1>Real Madrid</equipo1>
+		<equipo2>Atletico de Madrid</equipo2>
+		<resultado>0:3</resultado>
+		<fecha>13/10/2020</fecha>
+		<estadio>Uno muy grande</estadio>
+		<goles>
+			<gol>
+				<jugador equipo="1">Jugador A</jugador>
+				<minuto>15:00</minuto>
+			</gol>
+			<gol>
+				<jugador equipo="1">Jugador A</jugador>
+				<minuto>17:00</minuto>
+			</gol>
+			<gol>
+				<jugador equipo="1" >Jugador B</jugador>
+				<minuto>92:00</minuto>
+			</gol>
+		</goles>
+	</partido>
+	<partido>
+		<equipo1>Valencia</equipo1>
+		<equipo2>Deportivo</equipo2>
+		<resultado>3:3</resultado>
+		<fecha>13/10/2020</fecha>
+		<estadio>No tan grande</estadio>
+		<goles>
+			<gol>
+				<jugador>Jugador A</jugador>
+				<minuto>17:00</minuto>
+			</gol>
+			<gol>
+				<jugador>Jugador A</jugador>
+				<minuto>19:00</minuto>
+			</gol>
+			<gol>
+				<jugador>Jugador B</jugador>
+				<minuto>25:00</minuto>
+			</gol>
+			<gol>
+				<jugador>Jugador C</jugador>
+				<minuto>42:00</minuto>
+			</gol>
+			<gol>
+				<jugador>JugadorD</jugador>
+				<minuto>66:00</minuto>
+			</gol>
+			<gol>
+				<jugador>Jugador C</jugador>
+				<minuto>89:00</minuto>
+			</gol>
+		</goles>
+	</partido>
+	<partido>
+		<equipo1>Betis</equipo1>
+		<equipo2>Barcelona</equipo2>
+		<resultado>4:2</resultado>
+		<fecha>13/10/2020</fecha>
+		<estadio>muy muy peque&ntilde;o</estadio>
+		<goles>
+			<gol>
+				<jugador>Jugador A</jugador>
+				<minuto>17:00</minuto>
+			</gol>
+			<gol>
+				<jugador>Jugador A</jugador>
+				<minuto>19:00</minuto>
+			</gol>
+			<gol>
+				<jugador>Jugador E</jugador>
+				<minuto>25:00</minuto>
+			</gol>
+			<gol>
+				<jugador>Jugador F</jugador>
+				<minuto>42:00</minuto>
+			</gol>
+			<gol>
+				<jugador>JugadorD</jugador>
+				<minuto>66:00</minuto>
+			</gol>
+			<gol>
+				<jugador>Jugador C</jugador>
+				<minuto>89:00</minuto>
+			</gol>
+		</goles>
+	</partido>
+</liga>

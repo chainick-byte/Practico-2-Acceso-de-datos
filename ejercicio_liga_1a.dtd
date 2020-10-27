@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liga[
+<!ELEMENT liga (partido)*>
+<!ELEMENT partido(local, visitante, resultado, fecha, estadio, goles?)>
+<!ELEMENT local(equipo,marcador)>
+<!ELEMENT visitante(equipo,marcador)>
+<!ELEMENT equipo(#PCDATA)
+<!ELEMENT marcador(#PCDATA)
+<!ELEMENT fecha(#PCDATA)>
+<!ELEMENT goles(gol)*>
+<!ELEMENT gol(jugador,minuto)>
+<!ELEMENT jugador(#PCDATA)>
+<!ATTLIST equipo(visitante|local)local>
+<!ELEMENT minuto(#PCDATA)>
+];
+<liga>
+<partido>
+    <local>
+        <equipo>Real Madrid</equipo>
+        <marcador>0</marcador>
+    </local>
+    <visitante>
+        <equipo>Atletico de madrid</equipo>
+        <marcador>3</marcador>
+    </visitante>
+    <fecha>20-10-2020</fecha>
+    <goles>
+        <gol>
+            <jugador equipo="vistitante">Jugador A</jugador>
+            <minuto>15:00</minuto>
+        </gol>
+        <gol>
+            <jugador equipo="visitante">Jugador A</jugador>
+            <minuto>17:00</minuto>
+        </gol>
+        <gol>
+            <jugador equipo="visitante">Jugador B</jugador>
+            <minuto>92:00</minuto>
+        </gol>
+    </goles>
+
+</partido>
+</liga>

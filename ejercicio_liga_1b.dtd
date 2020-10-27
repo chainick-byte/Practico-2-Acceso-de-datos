@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liga[
+<!ELEMENT liga (partido)*>
+<!ELEMENT partido (equipoLocal,equipoVisitante,fecha,estadio)>
+<!ELEMENT equipoLocal(#PCDATA)>
+<!ATTLIST equipoLocal goles CDATA #REQUIRED>
+<!ELEMENT equipoVisitante(#PCDATA)>
+<!ATTLIST equipoVisitante goles CDATA #REQUIRED>
+<!ELEMENT fecha(#PCDATA)>
+<!ELEMENT estadio(#PCDATA)>
+]>
+
+<liga>
+    <partido>
+
+        <equipoLocal goles="0">Real Madrid</equipoLocal>
+        <equipoVisitante goles="3">Atletico de Madrid</equipoVisitante>
+        <estadio>Uno muy grande</estadio>
+        <fecha>26/10/2020 0:47</fecha>
+
+    </partido>
+</liga>
