@@ -1,22 +1,3 @@
-<!--El siguiente documento XML ("perifericos.xml") está bien formado. Sin embargo,
- no es válido. Para que lo sea, realizar los cambios necesarios en dicho documento.-->
-
-
-
-<!--<?xmlversion="1.0" encoding="UTF-8"?>
-<!DOCTYPE perifericos [
-<!ELEMENT perifericos (#PCDATA)>
-]>
-
-<perifericos>
-    <periferico>impresora</periferico>
-    <periferico>monitor</periferico>
-    <periferico>teclado</periferico>
-</perifericos>-->
-
-
-<!-- RESOLUCION-->
-
 <?xmlversion ="1.0" encoding="UTF-8"?>
 <!DOCTYPE perifericos[
 <!ELEMENT perifericos (periferico)*>

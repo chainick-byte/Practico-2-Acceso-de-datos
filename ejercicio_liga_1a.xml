@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liga[
+<!ELEMENT liga (partido*)>
+<!ELEMENT partido (local, visitante, fecha, estadio, goles?)>
+<!ELEMENT local (equipo,marcador)>
+<!ELEMENT visitante (equipo,marcador)>
+<!ELEMENT equipo (#PCDATA)>
+<!ELEMENT marcador (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT estadio (#PCDATA)>
+<!ELEMENT goles (gol*)>
+<!ELEMENT gol (jugador,minuto)>
+<!ELEMENT jugador (#PCDATA)>
+<!ATTLIST jugador equipo (visitante|local) 'local'>
+<!ELEMENT minuto (#PCDATA)>
+]>
+<liga>
+    <partido>
+        <local>
+            <equipo>Real Madrid</equipo>
+            <marcador>0</marcador>
+        </local>
+        <visitante>
+            <equipo>Atletico de madrid</equipo>
+            <marcador>3</marcador>
+        </visitante>
+        <fecha>20-10-2020</fecha>
+        <estadio>Uno muy grande</estadio>
+        <goles>
+            <gol>
+                <jugador equipo="visitante">Jugador A</jugador>
+                <minuto>15:00</minuto>
+            </gol>
+            <gol>
+                <jugador equipo="visitante">Jugador A</jugador>
+                <minuto>17:00</minuto>
+            </gol>
+            <gol>
+                <jugador equipo="visitante">Jugador B</jugador>
+                <minuto>92:00</minuto>
+            </gol>
+        </goles>
+    </partido>
+    <partido>
+        <local>
+            <equipo>Valencia</equipo>
+            <marcador>3</marcador>
+        </local>
+        <visitante>
+            <equipo>Deportivo</equipo>
+            <marcador>3</marcador>
+        </visitante>
+        <fecha>30-10-2020</fecha>
+        <estadio>No tan grande</estadio>
+        <goles>
+            <gol>
+                <jugador equipo="local">Jugador A</jugador>
+                <minuto>1:00</minuto>
+            </gol>
+            <gol>
+                <jugador equipo="local">JUgador A</jugador>
+                <minuto>56:00</minuto>
+            </gol>
+            <gol>
+                <jugador equipo="local">Jugador C</jugador>
+                <minuto>88:00</minuto>
+            </gol>
+            <gol>
+                <jugador equipo="visitante">Jugador E</jugador>
+                <minuto>28:00</minuto>
+            </gol>
+            <gol>
+                <jugador equipo="visitante">Jugador E</jugador>
+                <minuto>48:00</minuto>
+            </gol>
+            <gol>
+                <jugador equipo="visitante">Jugador P</jugador>
+                <minuto>78:00</minuto>
+            </gol>
+        </goles>
+    </partido>
+    <partido>
+        <local>
+            <equipo>Betis</equipo>
+            <marcador>4</marcador>
+        </local>
+        <visitante>
+            <equipo>Barcelona</equipo>
+            <marcador>2</marcador>
+        </visitante>
+        <fecha>20-10-2020</fecha>
+        <estadio>descampado</estadio>
+        <goles>
+            <gol>
+                <jugador equipo="local">Jugador T</jugador>
+                <minuto>15:00</minuto>
+            </gol>
+            <gol>
+                <jugador equipo="local">Jugador F</jugador>
+                <minuto>25:00</minuto>
+            </gol>
+            <gol>
+                <jugador equipo="local">Jugador A</jugador>
+                <minuto>44:00</minuto>
+            </gol>
+            <gol>
+                <jugador equipo="local">Jugador F</jugador>
+                <minuto>45:00</minuto>
+            </gol>
+            <gol>
+                <jugador equipo="visitante">Jugador A</jugador>
+                <minuto>17:00</minuto>
+            </gol>
+            <gol>
+                <jugador equipo="visitante">Jugador B</jugador>
+                <minuto>92:00</minuto>
+            </gol>
+        </goles>
+    </partido>
+</liga>

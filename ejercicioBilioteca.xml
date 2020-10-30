@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca[
+<!ELEMENT biblioteca (libro)>
+<!ELEMENT libro (titulo, editorial, edicion, numeroPaginas, autores)+>
+<!ATTLIST libro cod_libro CDATA #REQUIRED>
+<!ATTLIST libro isbn CDATA #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT edicion (#PCDATA)>
+<!ELEMENT numeroPaginas (#PCDATA)>
+<!ELEMENT autores (autor+)>
+<!ELEMENT autor (nombre, apellido, fechaNacimiento)>
+<!ATTLIST autor codigo_autor ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT fechaNacimiento (#PCDATA)>
+]>
+
+
+<!--cambiar el dtd-->
+<biblioteca>
+    <libro cod_libro="1" isbn="555555555555" >
+        <titulo>Don Quijote de la mancha</titulo>
+        <editorial>Juan de la cuesta</editorial>
+        <edicion>3</edicion>
+        <numeroPaginas>176</numeroPaginas>
+        <autores>
+            <autor codigo_autor="A1">
+                <nombre>Miguel</nombre>
+                <apellido>Cervantes de Saavedra</apellido>
+                <fechaNacimiento>29/09/1547</fechaNacimiento>
+            </autor>
+        </autores>
+    </libro>
+</biblioteca>

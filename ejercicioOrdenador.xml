@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ordenadores[
+<!ELEMENT ordenadores (ordenador)>
+<!ELEMENT ordenador (procesador, RAM+, discoDuro+, tarjetaampliacion*)>
+<!ATTLIST ordenador marca CDATA #REQUIRED>
+<!ATTLIST ordenador precio CDATA #IMPLIED>
+<!ELEMENT procesador (nucleo+)>
+<!ATTLIST procesador modelo CDATA #REQUIRED>
+<!ELEMENT nucleo (#PCDATA)>
+<!ELEMENT RAM (#PCDATA)>
+<!ATTLIST RAM tipo CDATA #REQUIRED>
+<!ELEMENT discoDuro (#PCDATA)>
+<!ATTLIST discoDuro tipodisco CDATA #REQUIRED>
+<!ELEMENT tarjetaampliacion (#PCDATA)>
+]>
+
+
+<ordenadores>
+    <ordenador marca="una chula" precio="999,99">
+        <procesador modelo="muy potente-7700K"> 
+            <nucleo>2,4Gh</nucleo>
+            <nucleo>2,4Gh</nucleo>
+            <nucleo>2,4Gh</nucleo>
+            <nucleo>2,4Gh</nucleo>    
+        </procesador>
+        <RAM tipo="DDR4">4Gb</RAM>      
+        <discoDuro tipodisco="HDD">500Gb</discoDuro>  
+        <tarjetaampliacion>Nvidia GTX 3080TI</tarjetaampliacion> 
+    </ordenador>
+</ordenadores>

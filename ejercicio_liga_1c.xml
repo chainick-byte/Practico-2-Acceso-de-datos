@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE liga[
 <!ELEMENT liga (partido)*>
-<!ELEMENT partido(equipoLocal, equipoVisitante)>
+<!ELEMENT partido (equipoLocal, equipoVisitante)>
 <!ATTLIST partido fecha CDATA #REQUIRED>
 <!ATTLIST partido estadio CDATA #REQUIRED>
 <!ELEMENT equipoLocal (#PCDATA)>
@@ -17,6 +17,22 @@
         <equipoLocal goles="0">Real Madrid</equipoLocal>
         <equipoVisitante goles="3" jugadores_marcaron="jugador A; jugador B; Jugador C">
                 Atletico de madrid
+        </equipoVisitante>
+    </partido>
+    <partido fecha="16/10/2020 20:47" estadio="Uno muy grande">
+        <equipoLocal goles="3" jugadores_marcaron="jugador E; jugador F; Jugador G">
+        Valencia
+        </equipoLocal>
+        <equipoVisitante goles="3" jugadores_marcaron="jugador A; jugador B; Jugador C">
+                Deportivo
+        </equipoVisitante>
+    </partido>
+    <partido fecha="30/10/2020 20:47" estadio="descampado">
+        <equipoLocal goles="4" jugadores_marcaron="Jugador C; jugador E; jugador F; Jugador G">
+        Valencia
+        </equipoLocal>
+        <equipoVisitante goles="2" jugadores_marcaron="jugador A; jugador B">
+                Deportivo
         </equipoVisitante>
     </partido>
 </liga>
